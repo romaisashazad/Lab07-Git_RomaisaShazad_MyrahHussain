@@ -1,0 +1,10 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+E:/Habib/Sem 4/CA/Lab05/Lab05-Git_MyrahHussain_RomaisaShazad/Vivado/CA_lab7/CA_lab7.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+E:/Habib/Sem 4/CA/Lab05/Lab05-Git_MyrahHussain_RomaisaShazad/Vivado/CA_lab7/CA_lab7.srcs/sim_1/new/RF_ALU_FSM_tb.v,1772690548,verilog,,,,RF_ALU_FSM_tb,,,,,,,,
+E:/Habib/Sem 4/CA/Lab05/Lab05-Git_MyrahHussain_RomaisaShazad/Vivado/CA_lab7/CA_lab7.srcs/sim_1/new/RegisterFile_tb.v,1772689039,verilog,,,,RegisterFile_tb,,,,,,,,
+E:/Habib/Sem 4/CA/Lab05/Lab05-Git_MyrahHussain_RomaisaShazad/Vivado/CA_lab7/CA_lab7.srcs/sources_1/new/ALU.v,1772690103,verilog,,E:/Habib/Sem 4/CA/Lab05/Lab05-Git_MyrahHussain_RomaisaShazad/Vivado/CA_lab7/CA_lab7.srcs/sources_1/new/ALU_1bit.v,,ALU,,,,,,,,
+E:/Habib/Sem 4/CA/Lab05/Lab05-Git_MyrahHussain_RomaisaShazad/Vivado/CA_lab7/CA_lab7.srcs/sources_1/new/ALU_1bit.v,1772690281,verilog,,E:/Habib/Sem 4/CA/Lab05/Lab05-Git_MyrahHussain_RomaisaShazad/Vivado/CA_lab7/CA_lab7.srcs/sources_1/new/RegisterFile.v,,ALU_1bit,,,,,,,,
+E:/Habib/Sem 4/CA/Lab05/Lab05-Git_MyrahHussain_RomaisaShazad/Vivado/CA_lab7/CA_lab7.srcs/sources_1/new/RegisterFile.v,1772689039,verilog,,E:/Habib/Sem 4/CA/Lab05/Lab05-Git_MyrahHussain_RomaisaShazad/Vivado/CA_lab7/CA_lab7.srcs/sim_1/new/RF_ALU_FSM_tb.v,,RegisterFile,,,,,,,,
