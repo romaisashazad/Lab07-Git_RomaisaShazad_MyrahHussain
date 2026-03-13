@@ -1,0 +1,539 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Mar 12 09:34:47 2026
+# Process ID: 48320
+# Current directory: C:/Users/wk09758/Downloads/lab07/lab07
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent42492 C:\Users\wk09758\Downloads\lab07\lab07\lab07.xpr
+# Log file: C:/Users/wk09758/Downloads/lab07/lab07/vivado.log
+# Journal file: C:/Users/wk09758/Downloads/lab07/lab07\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/wk09758/Downloads/lab07/lab07/lab07.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1028.129 ; gain = 0.000
+update_compile_order -fileset sources_1
+set_property top RF_ALU_FSM_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/wk09758/Downloads/lab07/lab07/lab07.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RF_ALU_FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/wk09758/Downloads/lab07/lab07/lab07.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RF_ALU_FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/ALU_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/alugen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_1bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RF_ALU_FSM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wk09758/Downloads/lab07/lab07/lab07.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/wk09758/Downloads/lab07/lab07/lab07.sim/sim_1/behav/xsim'
+"xelab -wto 7848f05ae43d4f068d548adbc13151ad --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RF_ALU_FSM_tb_behav xil_defaultlib.RF_ALU_FSM_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 7848f05ae43d4f068d548adbc13151ad --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RF_ALU_FSM_tb_behav xil_defaultlib.RF_ALU_FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ALU_1bit
+Compiling module xil_defaultlib.ALU_default
+Compiling module xil_defaultlib.RF_ALU_FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RF_ALU_FSM_tb_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/wk09758/Downloads/lab07/lab07/lab07.sim/sim_1/behav/xsim/xsim.dir/RF_ALU_FSM_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar 12 09:37:28 2026...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1027.902 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/wk09758/Downloads/lab07/lab07/lab07.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RF_ALU_FSM_tb_behav -key {Behavioral:sim_1:Functional:RF_ALU_FSM_tb} -tclbatch {RF_ALU_FSM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source RF_ALU_FSM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+PASS                   ADD  x4 = x1 + x2 got=0x11111111
+PASS                   SUB  x5 = x1 - x2 got=0x0f0f0f0f
+PASS                   AND  x6 = x1 & x2 got=0x00000000
+PASS                   OR   x7 = x1 | x2 got=0x11111111
+PASS                   XOR  x8 = x1 ^ x2 got=0x11111111
+PASS            SLL  x9  = x1 << x3[4:0] got=0x02020200
+PASS            SRL  x10 = x1 >> x3[4:0] got=0x00808080
+FAIL      Q  Zero flag (x1-x1==0) -> x11 got=0x00000000  exp=0x00000001
+PASS           RAW  x12 read-after-write got=0xfaceface
+
+--- All checks complete. Simulation done. ---
+$finish called at time : 245 ns : File "C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sim_1/new/tb.v" Line 629
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RF_ALU_FSM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1027.902 ; gain = 0.000
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/RF_ALU_FSM_tb/RF}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/wk09758/Downloads/lab07/lab07/lab07.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RF_ALU_FSM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/wk09758/Downloads/lab07/lab07/lab07.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RF_ALU_FSM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RF_ALU_FSM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/wk09758/Downloads/lab07/lab07/lab07.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/wk09758/Downloads/lab07/lab07/lab07.sim/sim_1/behav/xsim'
+"xelab -wto 7848f05ae43d4f068d548adbc13151ad --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RF_ALU_FSM_tb_behav xil_defaultlib.RF_ALU_FSM_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 7848f05ae43d4f068d548adbc13151ad --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RF_ALU_FSM_tb_behav xil_defaultlib.RF_ALU_FSM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ALU_1bit
+Compiling module xil_defaultlib.ALU_default
+Compiling module xil_defaultlib.RF_ALU_FSM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RF_ALU_FSM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+PASS                   ADD  x4 = x1 + x2 got=0x11111111
+PASS                   SUB  x5 = x1 - x2 got=0x0f0f0f0f
+PASS                   AND  x6 = x1 & x2 got=0x00000000
+PASS                   OR   x7 = x1 | x2 got=0x11111111
+PASS                   XOR  x8 = x1 ^ x2 got=0x11111111
+PASS            SLL  x9  = x1 << x3[4:0] got=0x02020200
+PASS            SRL  x10 = x1 >> x3[4:0] got=0x00808080
+FAIL      Q  Zero flag (x1-x1==0) -> x11 got=0x00000000  exp=0x00000001
+PASS           RAW  x12 read-after-write got=0xfaceface
+
+--- All checks complete. Simulation done. ---
+$finish called at time : 245 ns : File "C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sim_1/new/tb.v" Line 629
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1027.902 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Thu Mar 12 09:58:24 2026] Launched synth_1...
+Run output will be captured here: C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/synth_1/runme.log
+[Thu Mar 12 09:58:24 2026] Launched impl_1...
+Run output will be captured here: C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.1
+  **** Build date : May 27 2020 at 20:24:38
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 14 2020-06:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1027.902 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+set_property PROGRAM.FILE {C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/impl_1/top_rf_alu.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/impl_1/top_rf_alu.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+close [ open {C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/seven _seg.v} w ]
+add_files {{C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/seven _seg.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Thu Mar 12 10:05:24 2026] Launched synth_1...
+Run output will be captured here: C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/synth_1/runme.log
+[Thu Mar 12 10:05:24 2026] Launched impl_1...
+Run output will be captured here: C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/impl_1/top_rf_alu.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/impl_1/top_rf_alu.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183AF2BDEA" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183AF2BDEA" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183AF2BDEA" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183AF2BDEA" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183AF2BDEA" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183AF2BDEA" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+set_property PROGRAM.FILE {C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/impl_1/top_rf_alu.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/impl_1/top_rf_alu.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Thu Mar 12 10:28:41 2026] Launched synth_1...
+Run output will be captured here: C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/synth_1/runme.log
+[Thu Mar 12 10:28:41 2026] Launched impl_1...
+Run output will be captured here: C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/impl_1/top_rf_alu.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/impl_1/top_rf_alu.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Thu Mar 12 10:33:36 2026] Launched synth_1...
+Run output will be captured here: C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/synth_1/runme.log
+[Thu Mar 12 10:33:36 2026] Launched impl_1...
+Run output will be captured here: C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/impl_1/top_rf_alu.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/impl_1/top_rf_alu.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+ERROR: [Labtools 27-3165] End of startup status: LOW
+ERROR: [Common 17-39] 'program_hw_devices' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/impl_1/top_rf_alu.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Thu Mar 12 10:43:57 2026] Launched impl_1...
+Run output will be captured here: C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2673.352 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 3354.836 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 3354.836 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3354.836 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 3471.992 ; gain = 1036.594
+INFO: [Common 17-344] 'open_run' was cancelled
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Thu Mar 12 10:45:15 2026] Launched synth_1...
+Run output will be captured here: C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/synth_1/runme.log
+[Thu Mar 12 10:45:15 2026] Launched impl_1...
+Run output will be captured here: C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/impl_1/top_rf_alu.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2BDEA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/wk09758/Downloads/lab07/lab07/lab07.runs/impl_1/top_rf_alu.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: top_rf_alu
+WARNING: [Synth 8-6901] identifier 'alu_result' is used before its declaration [C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/top.v:187]
+WARNING: [Synth 8-6901] identifier 'alu_result' is used before its declaration [C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/top.v:213]
+WARNING: [Synth 8-6901] identifier 'alu_result' is used before its declaration [C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/top.v:239]
+WARNING: [Synth 8-6901] identifier 'alu_result' is used before its declaration [C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/top.v:265]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 4336.254 ; gain = 224.648
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_rf_alu' [C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/top.v:25]
+	Parameter S_IDLE bound to: 4'b0000 
+	Parameter S_W_X1 bound to: 4'b0001 
+	Parameter S_W_X2 bound to: 4'b0010 
+	Parameter S_W_X3 bound to: 4'b0011 
+	Parameter S_READ_ADD bound to: 4'b0100 
+	Parameter S_WRES_ADD bound to: 4'b0101 
+	Parameter S_READ_SUB bound to: 4'b0110 
+	Parameter S_WRES_SUB bound to: 4'b0111 
+	Parameter S_READ_AND bound to: 4'b1000 
+	Parameter S_WRES_AND bound to: 4'b1001 
+	Parameter S_READ_OR bound to: 4'b1010 
+	Parameter S_WRES_OR bound to: 4'b1011 
+	Parameter S_DONE bound to: 4'b1100 
+	Parameter CONST_A bound to: 269488144 - type: integer 
+	Parameter CONST_B bound to: 16843009 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/top.v:374]
+	Parameter DB_CNT bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (1#1) [C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/top.v:374]
+INFO: [Synth 8-6157] synthesizing module 'edge_detect' [C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/top.v:396]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detect' (2#1) [C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/top.v:396]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/reg_file.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (3#1) [C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/reg_file.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/ALU_module.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ALU_1bit' [C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/alugen.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_1bit' (4#1) [C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/alugen.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/ALU_module.v:21]
+INFO: [Synth 8-6157] synthesizing module 'seven_seg_hex' [C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/seven _seg.v:13]
+INFO: [Synth 8-226] default block is never used [C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/seven _seg.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg_hex' (6#1) [C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/seven _seg.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'top_rf_alu' (7#1) [C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/top.v:25]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 4388.512 ; gain = 276.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 4388.512 ; gain = 276.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 4388.512 ; gain = 276.906
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 4388.512 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/constrs_1/new/const.xdc]
+Finished Parsing XDC File [C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/constrs_1/new/const.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4388.512 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 4388.512 ; gain = 276.906
+18 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 4388.512 ; gain = 276.906
+write_schematic -format pdf -orientation portrait C:/Users/wk09758/Downloads/.pdf
+C:/Users/wk09758/Downloads/.pdf
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 12 10:57:55 2026...

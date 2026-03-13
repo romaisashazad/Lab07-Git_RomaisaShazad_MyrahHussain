@@ -1,0 +1,10 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/wk09758/Downloads/lab07/lab07/lab07.sim/sim_1/behav/xsim/glbl.v,1773290076,verilog,,,,glbl,,,,,,,,
+C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sim_1/new/reg_file_tb.v,1773038383,verilog,,,,RegisterFile_tb,,,,,,,,
+C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sim_1/new/tb.v,1773290198,verilog,,,,RF_ALU_FSM_tb,,,,,,,,
+C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/ALU_module.v,1773290077,verilog,,C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/alugen.v,,ALU,,,,,,,,
+C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/alugen.v,1773290077,verilog,,C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/reg_file.v,,ALU_1bit,,,,,,,,
+C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sources_1/new/reg_file.v,1773290077,verilog,,C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sim_1/new/tb.v,,RegisterFile,,,,,,,,

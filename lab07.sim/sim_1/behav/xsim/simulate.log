@@ -1,0 +1,14 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+PASS                   ADD  x4 = x1 + x2 got=0x11111111
+PASS                   SUB  x5 = x1 - x2 got=0x0f0f0f0f
+PASS                   AND  x6 = x1 & x2 got=0x00000000
+PASS                   OR   x7 = x1 | x2 got=0x11111111
+PASS                   XOR  x8 = x1 ^ x2 got=0x11111111
+PASS            SLL  x9  = x1 << x3[4:0] got=0x02020200
+PASS            SRL  x10 = x1 >> x3[4:0] got=0x00808080
+FAIL      Q  Zero flag (x1-x1==0) -> x11 got=0x00000000  exp=0x00000001
+PASS           RAW  x12 read-after-write got=0xfaceface
+
+--- All checks complete. Simulation done. ---
+$finish called at time : 245 ns : File "C:/Users/wk09758/Downloads/lab07/lab07/lab07.srcs/sim_1/new/tb.v" Line 629
